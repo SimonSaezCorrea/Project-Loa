@@ -14,6 +14,8 @@ import lombok.NoArgsConstructor;
 public class StudentScheduleSubjectEntity {
     @Id
     @NotNull
+    private String id;
+
     private String rut;
     private String id_schedule_subject;
 }
