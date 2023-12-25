@@ -27,14 +27,42 @@ spring:
             allow-credentials: true
       routes:
         - id: students
-          uri: lb://students
+          uri: lb://student
           predicates:
-            - Path=/students/**
+            - Path=/student/**
+        - id: calification
+          uri: lb://student
+          predicates:
+            - Path=/calification/**
+        - id: studentScheduleSubject
+          uri: lb://student
+          predicates:
+            - Path=/studentScheduleSubject/**
         - id: career
           uri: lb://career
           predicates:
             - Path=/career/**
+        - id: faculty
+          uri: lb://career
+          predicates:
+            - Path=/faculty/**
+        - id: careerSubject
+          uri: lb://career
+          predicates:
+            - Path=/careerSubject/**
         - id: subject
           uri: lb://subject
           predicates:
             - Path=/subject/**
+        - id: schedule
+          uri: lb://subject
+          predicates:
+            - Path=/schedule/**
+        - id: scheduleSubject
+          uri: lb://subject
+          predicates:
+            - Path=/scheduleSubject/**
+        - id: dependence
+          uri: lb://subject
+          predicates:
+            - Path=/dependence/**
