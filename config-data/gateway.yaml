@@ -54,10 +54,10 @@ spring:
           uri: lb://subject
           predicates:
             - Path=/subject/**
-        - id: schedule
+        - id: scheduler
           uri: lb://subject
           predicates:
-            - Path=/schedule/**
+            - Path=/scheduler/**
         - id: scheduleSubject
           uri: lb://subject
           predicates:
