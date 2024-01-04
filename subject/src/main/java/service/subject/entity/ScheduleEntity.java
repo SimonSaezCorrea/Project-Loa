@@ -19,6 +19,6 @@ public class ScheduleEntity {
     @NotNull
     private int id;
 
-    private LocalDate initial_schedule;
-    private LocalDate final_schedule;
+    private String initial_schedule;
+    private String final_schedule;
 }

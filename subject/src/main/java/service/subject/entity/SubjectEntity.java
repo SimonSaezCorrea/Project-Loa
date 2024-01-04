@@ -18,6 +18,6 @@ public class SubjectEntity {
     private String id;
     private String name;
     private int level;
-    private int id_schedule;
+    private String day;
     private int quota;
 }
