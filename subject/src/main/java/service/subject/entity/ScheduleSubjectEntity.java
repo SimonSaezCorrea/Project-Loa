@@ -19,4 +19,5 @@ public class ScheduleSubjectEntity {
 
     private String id_subject;
     private int id_schedule;
+    private String day;
 }
